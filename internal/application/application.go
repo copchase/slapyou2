@@ -2,6 +2,7 @@ package application
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/copchase/slapyou2/internal/client/dynamodb"
 	slapHandler "github.com/copchase/slapyou2/internal/handler/slap"
@@ -39,4 +40,5 @@ func NewApplication(ctx context.Context) *application {
 }
 
 func (a *application) Run() {
+	fmt.Println("Hello world! 2")
 }
